@@ -43,7 +43,12 @@ html {
 
 
 }
-  
+
+#content {
+
+}
+
+
 .card {
     display: inline;
     min-height: 250px;
@@ -52,6 +57,9 @@ html {
 
 }
 
+.noShow {
+  display: none;
+}
 
 
 
