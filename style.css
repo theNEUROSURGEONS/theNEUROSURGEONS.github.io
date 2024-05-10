@@ -48,6 +48,15 @@ html {
 
 }
 
+#nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: red;
+  padding: 50px;
+  font-size: 20px;
+}
+
 #content {
     background-color: lightgrey;
 }
