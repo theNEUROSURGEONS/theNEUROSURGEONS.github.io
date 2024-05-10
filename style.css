@@ -14,6 +14,25 @@ html {
     background-color: bisque;
   }
   
+  #top {
+    position: fixed;
+    background-color: beige;
+
+  }
+
+  #company {
+    font-size: 14px;
+  }
+
+  #address {
+    color: brown;
+  }
+
+  #telephone {
+    color: chocolate;
+
+  }
+
   #nav {
     /* LAYOUT */
     position: fixed;
