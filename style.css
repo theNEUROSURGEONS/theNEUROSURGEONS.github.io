@@ -1,0 +1,87 @@
+html {
+    width: 100vw;
+    height: 100vh;
+    background-color: aqua;
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #band {
+    height: 40px;
+    background-color: bisque;
+  }
+  
+  #nav {
+    /* LAYOUT */
+    position: fixed;
+    top: 4px;
+    left: 4px;
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    justify-content: left;
+  
+    & div {
+      /* STYLE */
+      font-style: italic;
+      font-weight: bold;
+      padding: 4px;
+      margin: 1px;
+      border: red solid 2px;
+      color: red;
+      background-color: yellow;
+    }
+  
+    & div.active {
+      background-color: blue;
+      border-width: 3px;
+    }
+  }
+  
+  #content {
+    & .page {
+      display: none;
+    }
+  
+    & .page.show {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      border: green solid 3px;
+    }
+  
+    & .page div.item.label {
+      color: green;
+      display: inline-block;
+      min-width: 150px;
+      border: green solid 2px;
+      padding-left: 2px;
+    }
+  
+    & .page div.item.value {
+      color: red;
+      border: black 1px solid;
+      min-width: fit-content;
+      padding-left: 2px;
+    }
+  
+    & button {
+      font-size: 2rem;
+      border: solid 3px red;
+      border-radius: 8px;
+      background-color: grey;
+    }
+  
+    & button.active {
+      background-color: blue;
+    }
+  
+    & input {
+      border: red solid 2px;
+      word-wrap: break-word;
+      word-break: break-all;
+    
+    }
+  }
