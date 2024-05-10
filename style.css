@@ -39,8 +39,10 @@ html {
 
 #nav {
 
-    background-color: lightgreen;
+    background-color: rgb(238, 144, 160);
+    position: -webkit-sticky;
     position: sticky;
+    top: 0;
 
 
 }
