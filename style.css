@@ -45,7 +45,7 @@ html {
 }
   
 .card {
-    display: inline-block;
+    display: inline;
     min-height: 250px;
     background-color: yellow;
     border: 5px solid red;
