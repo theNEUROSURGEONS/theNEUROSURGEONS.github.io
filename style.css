@@ -68,10 +68,7 @@ html {
     display: inline-block;
     min-height: 250px;
     background-color: yellow;
-    border-color: red;
-    border-width: 4px;
-    border-style: double;
-    borde
+    border: 5px solid red;
 
 }
 
