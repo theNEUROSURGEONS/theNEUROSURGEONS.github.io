@@ -35,7 +35,7 @@ html {
 
   #nav {
     /* LAYOUT */
-    position: fixed;
+    position: relative;
     top: 4px;
     left: 4px;
     display: flex;
