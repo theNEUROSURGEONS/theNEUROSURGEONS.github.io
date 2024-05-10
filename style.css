@@ -50,16 +50,16 @@ html {
 
 
 .card {
-    display: inline;
+
     min-height: 250px;
     background-color: yellow;
     border: 5px solid red;
 
 }
 
-.noShow {
+/* .noShow {
   display: none;
-}
+} */
 
 
 
