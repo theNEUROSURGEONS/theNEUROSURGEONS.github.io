@@ -4,7 +4,7 @@ html {
     background-color: hsl(180, 15%, 90%);
   }
   
-  * {
+* {
     margin: 0;
     padding: 0;
   }
@@ -37,7 +37,7 @@ html {
   }
   */
 
-  #nav {
+#nav {
     /* LAYOUT */
     position: relative;
     top: 4px;
@@ -62,9 +62,21 @@ html {
       background-color: blue;
       border-width: 3px;
     }
-  }
+}
   
-  #content {
+.card {
+    display: block;
+    min-height: 250px;
+    background-color: yellow;
+    border-color: red;
+    border-width: 2px;
+    
+}
+
+
+
+
+  /* #content {
     & .page {
       display: none;
     }
@@ -107,4 +119,4 @@ html {
       word-break: break-all;
     
     }
-  }
+  } */
