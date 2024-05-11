@@ -1,80 +1,122 @@
 html {
-    width: 100vw;
-    height: 100vh;
-    background-color: hsl(180, 15%, 90%);
+  width: 100vw;
+  height: 100vh;
+  & body {
+    background-color: burlywood;
   }
-  
+}
+
 * {
-    margin: 0;
-    padding: 0;
-  }
-  
-  /* #band {
-    height: 40px;
-    background-color: bisque;
-  } */
-  
-  
+  margin: 0;
+  padding: 0;
+}
+
+.english {
+  font-family: "Times New Roman", Times, serif;
+}
+
+#top {
   #top {
-
     background-color: beige;
+    display: grid;
+    grid-template-columns: 4fr 2fr;
+    padding: 5px 0px 0px 10px;
 
+    & #company {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 24px;
+      font-weight: bold;
+      color: goldenrod;
+    }
+
+    & #address {
+      color: brown;
+    }
   }
 
-  #company {
-    font-size: 18px;
-    font-weight: bold;
-    color: red;
+  #topRight {
+    padding-left: 20px;
+
+    & #telephone,
+    #telephoneNo {
+      color: brown;
+    }
+
+    & #whatsapp {
+      font-family: "Times New Roman", Times, serif;
+      font-size: 16px;
+    }
   }
+}
 
-  #address {
-    color: brown;
-  }
-
-  #telephone {
-    color: chocolate;
-
-  }
-  
-  #whatsapp {
-    background-color: yellow;
-    font-size: 20px;
-  }
-
-#nav {
-
+#middle {
+  & #nav {
     background-color: greenyellow;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
-    padding: 20px;
+    padding: 3px 15px 3px 10px;
     font-size: 20px;
 
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     gap: 2px;
     justify-content: left;
-
+  }
 }
 
+#nav {
+  background-color: greenyellow;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 3px 15px 3px 10px;
+  font-size: 20px;
 
-
-#content {
-    background-color: lightgrey;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2px;
+  justify-content: left;
 }
 
+#shortcut,
+.about {
+  padding-bottom: 10px;
+}
 
 .card {
-
-    min-height: 350px;
-    background-color: green;
-    border: 5px solid red;
-
+  /* min-height: 350px; */
+  padding: 10px;
+  /* border: 2px solid red; */
 }
 
-/* .noShow {
+pre {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+}
+
+#DOCTORS {
+  display: grid;
+  grid-template-columns: 11fr 16fr;
+  gap: 2px;
+  justify-content: left;
+}
+
+#HOURS,
+#CONTACT {
+  display: grid;
+  grid-template-columns: 3fr 7fr;
+  gap: 2px;
+  justify-content: left;
+}
+
+img {
+  padding: 2px;
+}
+
+.noShow,
+#DOCTORS.noShow,
+#HOURS.noShow,
+#CONTACT.noShow {
   display: none;
-} */
-
-
-
+}
