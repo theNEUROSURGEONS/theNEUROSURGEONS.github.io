@@ -15,6 +15,7 @@ scene.add( cube );
 camera.position.z = 5;
 
 var i = 1;
+console.log ("started");
 
 function animate() {
 	requestAnimationFrame( animate );
@@ -25,5 +26,5 @@ function animate() {
     i = i + 1;
 	renderer.render( scene, camera );
 }
-
+console.log ("before animate");
 animate();
