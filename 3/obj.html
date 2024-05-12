@@ -63,14 +63,14 @@
 				};
 
 				new MTLLoader()
-					.setPath( '3/' )
+					.setPath( '/' )
 					.load( 'cta.mtl', function ( materials ) {
 
 						materials.preload();
 
 						new OBJLoader()
 							.setMaterials( materials )
-							.setPath( '3/' )
+							.setPath( '/' )
 							.load( 'cta.obj', function ( object ) {
 
 								object.position.y = - 0.95;
