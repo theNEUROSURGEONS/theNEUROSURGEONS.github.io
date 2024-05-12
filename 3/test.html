@@ -9,7 +9,8 @@
 
 	<body>
 		<div id="info">
-		<a id="progress" href="https://theNEUROSURGEONS.github.io" target="_blank" rel="noopener">theNEUROSURGOENS</a> - OBJLoader test
+		<a href="https://theNEUROSURGEONS.github.io" target="_blank" rel="noopener">theNEUROSURGOENS</a>
+        <div id="progress"></div>
 		</div>
 
         <script type="importmap">
@@ -78,6 +79,7 @@
 
 				// model
                 const p = document.getElementById("progress");
+
 				function onProgress( xhr ) {
 
 					if ( xhr.lengthComputable ) {
@@ -85,7 +87,7 @@
                         
 						const percentComplete = xhr.loaded / xhr.total * 100;
 						console.log( 'model ' + percentComplete.toFixed( 2 ) + '% downloaded' );
-                        p.textContent = ("percentComplete.toFixed( 2 ) + '% downloaded' ")
+                        p.textContent = percentComplete.toFixed( 2 ) + '% downloaded';
 					}
 
 				}
