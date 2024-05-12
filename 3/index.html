@@ -9,7 +9,8 @@
 
 	<body>
 		<div id="info">
-		<a href="https://threejs.org" target="_blank" rel="noopener">three.js</a> - OBJLoader test
+		<a href="https://theNEUROSURGEONS.github.io" target="_blank" rel="noopener">theNEUROSURGOENS</a>
+        <div id="progress"></div>
 		</div>
 
         <script type="importmap">
@@ -77,14 +78,16 @@
 				texture.colorSpace = THREE.SRGBColorSpace;
 
 				// model
+                const p = document.getElementById("progress");
 
 				function onProgress( xhr ) {
 
 					if ( xhr.lengthComputable ) {
-
+                        
+                        
 						const percentComplete = xhr.loaded / xhr.total * 100;
 						console.log( 'model ' + percentComplete.toFixed( 2 ) + '% downloaded' );
-
+                        p.textContent = percentComplete.toFixed( 2 ) + '% downloaded';
 					}
 
 				}
@@ -92,6 +95,8 @@
 				function onError() {}
 
 				const loader = new OBJLoader( manager );
+
+
 				loader.load( '/3/cta.obj', function ( obj ) {
 
 					object = obj;
