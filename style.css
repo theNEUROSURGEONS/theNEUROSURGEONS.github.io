@@ -36,6 +36,7 @@ html {
 
   #topRight {
     padding-left: 20px;
+    align-content: right;
 
     & #telephone,
     #telephoneNo {
