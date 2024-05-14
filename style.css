@@ -63,27 +63,16 @@ html {
   }
 }
 
-/* #nav {
-  background-color: greenyellow;
-  padding: 3px 15px 3px 10px;
-  font-size: 20px;
-
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 2px;
-  justify-content: left;
-} */
 
 #shortcut,
 .about {
   padding-bottom: 10px;
-  padding-top: 10px;
+
 }
 
 .card {
-  /* min-height: 350px; */
   padding: 10px;
-  /* border: 2px solid red; */
+  border: 2px solid red;
 }
 
 pre {
