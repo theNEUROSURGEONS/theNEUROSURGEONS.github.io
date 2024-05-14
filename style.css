@@ -1,6 +1,6 @@
 html {
-  width: 100 vw;
-  height: 100 vh;
+  width: 100vw;
+  height: 100vh;
   & body {
     background-color: burlywood;
   }
@@ -20,105 +20,111 @@ html {
     background-color: beige;
     display: grid;
     grid-template-columns: 4fr 2fr;
-    padding: 5px 0px 0px 10px;
-
-    & #company {
-      font-family: "Times New Roman", Times, serif;
-      font-size: 24px;
-      font-weight: bold;
-      color: goldenrod;
-    }
-
-    & #address {
-      color: brown;
-    }
+    padding: 15px 3px 5px 10px;
   }
 
-  #topRight {
-    padding-left: 20px;
-    align-content: right;
+#topLeft {
+  display: grid;
+  grid-template-rows: 2;
+  /* border: red solid 1px; */
 
-    & #telephone,
-    #telephoneNo {
-      color: brown;
-    }
+  & #company {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 24px;
+    font-weight: bold;
+    color: goldenrod;
 
-    & #whatsapp {
-      font-family: "Times New Roman", Times, serif;
-      font-size: 16px;
-    }
+    /* border: red solid 1px; */
+  }
+
+  & #companyChinese {
+    padding-bottom: 5px;
+    /* border: red solid 1px; */
+  }
+
+  & #address {
+    color: brown;
+    /* padding-top: 10px; */
+    /* border: red solid 1px; */
+    padding-top: 9px;
   }
 }
+
+#topRight {
+  padding-left: 50px;
+  /* align-content: right; */
+  display: grid;
+  grid-template-rows: 2;
+  /* border: red solid 1px; */
+
+  & #telephone,
+  #telephoneNo {
+    color: brown;
+    /* border: red solid 1px; */
+  }
+
+  & #whatsapp {
+    font-family: "Times New Roman", Times, serif;
+    font-size: 15px;
+    padding-top: 6px;
+    /* border: red solid 1px; */
+  }
+  
+  & #whatsappNo {
+    /* border: red solid 1px; */
+  }
+}
+}
+
 
 #middle {
-  & #nav {
-    background-color: greenyellow;
-    padding: 3 px 15 px 3 px 10 px;
-    font-size: 20 px;
-
-    display: grid;
-    grid-template-columns: 1 fr 1 fr;
-    gap: 2 px;
-    justify-content: left;
-  }
-}
-
-#nav {
   background-color: greenyellow;
-  padding: 3 px 15 px 3 px 10 px;
-  font-size: 20 px;
+  padding: 3px 15px 3px 10px;
+  font-size: 20px;
+  /* border: 2px solid red; */
+
 
   display: grid;
-  grid-template-columns: 1 fr 1 fr;
-  gap: 2 px;
+  grid-template-columns: 1fr 1fr;
+  gap: 2px;
   justify-content: left;
 }
 
-#bottom {
-  padding: 20 px 5 px 10 px 5 px;
+.list-10 {
+  padding-bottom: 10px;
 }
 
-.about {
-  padding-bottom: 10 px;
+.list-25 {
+  padding-top: 25px;
+}
 
+.list-5 {
+  padding-bottom: 5px;
 }
 
 .card {
-  padding: 20 px 10 px 10 px;
-  /* border: 2 px solid red; */
+  padding: 20px 10px 10px;
+  /* border: 3px red solid; */
 }
 
-pre {
-  font-family: "Times New Roman", Times, serif;
-  font-size: 16 px;
-} 
-
-/* #layer-1 {
-  padding: 10 px;
-} */
-
-#DOCTORS {
+.column-11-16 {
   display: grid;
-  grid-template-columns: 11 fr 16 fr;
-  gap: 2 px;
+  grid-template-columns: 11fr 16fr;
+  gap: 2px;
   justify-content: left;
 }
 
-#HOURS,
-#CONTACT {
+.column-3-7 {
   display: grid;
-  grid-template-columns:  3 fr 7 fr;
-  gap: 2 px;
+  grid-template-columns:  3fr 7fr;
+  /* gap: 2px; */
   justify-content: left;
 }
 
 img {
-  padding: 0 px;
+  padding: 0 0 0 5px;
 }
 
-.noShow,
-#DOCTORS.noShow,
-#HOURS.noShow,
-#CONTACT.noShow {
+.noShow{
   display: none;
 }
