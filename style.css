@@ -63,6 +63,20 @@ html {
   }
 }
 
+#nav {
+  background-color: greenyellow;
+  padding: 3 px 15 px 3 px 10 px;
+  font-size: 20 px;
+
+  display: grid;
+  grid-template-columns: 1 fr 1 fr;
+  gap: 2 px;
+  justify-content: left;
+}
+
+#bottom {
+  padding: 20 px 5 px 10 px 5 px;
+}
 
 .about {
   padding-bottom: 10 px;
